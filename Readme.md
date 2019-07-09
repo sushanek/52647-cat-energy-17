@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Лев Сушанек](https://up.htmlacademy.ru/adaptive/17/user/52647).
-* Наставник: `Неизвестно`.
+* Наставник: [Натали 🌏 Белоева](https://htmlacademy.ru/profile/id1123699).
 
 ---
 
