@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>КэтЭнерджи: Каталог</title>
 </head>
 
 <body>
@@ -44,15 +44,15 @@
             <td>700 Р.</td>
           </tr>
         </table>
-        <button class="btn">Заказать</button>
+        <button class="btn" type="button">Заказать</button>
       </li>
 
       <!-- Здесь будут еще товары -->
 
       <li class="product__more">
-        <span class="product__title">Показать еще 100500 товаров</h2>
+        <span class="product__title">Показать еще 100500 товаров</span>
         <span class="product__text">На самом деле вкусов гораздо больше!</span>
-        <button class="btn">Показать все</button>
+        <button class="btn" type="button">Показать все</button>
       </li>
     </ul>
 
@@ -67,7 +67,7 @@
             <td>200 Р.</td>
           </tr>
         </table>
-        <button class="btn">Заказать</button>
+        <button class="btn" type="button">Заказать</button>
       </li>
       <!-- Здесь будут еще товары -->
     </ul>
@@ -90,12 +90,14 @@
         alt="Как добраться до офиса Cat Energy">
     </section>
 
-    <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+    <a href="#">
+      <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
+    </a>
 
     <ul class="footer__social">
-      <li class="footer__social-item"><a href="#">Вконтакте</a></li>
-      <li class="footer__social-item"><a href="#">Инстаграм</a></li>
-      <li class="footer__social-item"><a href="#">Фейсбук</a></li>
+      <li class="footer__social-item" aria-label="Страница Вконтакте"><a href="#">Вконтакте</a></li>
+      <li class="footer__social-item" aria-label="Страница Инстаграм"><a href="#">Инстаграм</a></li>
+      <li class="footer__social-item" aria-label="Страница Фейсбук"><a href="#">Фейсбук</a></li>
     </ul>
 
     <div class="footer__copy">
@@ -104,6 +106,7 @@
     </div>
 
   </footer>
+
 </body>
 
 </html>
