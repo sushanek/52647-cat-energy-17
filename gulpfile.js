@@ -18,7 +18,7 @@ gulp.task("css", function () {
     ]))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
-    .pipe(server.stream());
+    .pipe(server.reload({stream: true}));
 });
 
 gulp.task("server", function () {
