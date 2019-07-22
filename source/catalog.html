@@ -4,25 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
   <title>КэтЭнерджи: Каталог</title>
 </head>
 
 <body>
 
   <header class="header">
-    <a class="header__logo-icon" href="#"></a>
-    <a class="header__logo-text" href="#"></a>
-    <nav class="header__nav">
-      <a class="header__icon-open"></a>
-      <a class="header__nav-close hide"></a>
+
+    <div class="header__container">
+      <a class="header__logo" href="#"></a>
+      <a class="header__logo-text" href="#"></a>
+      <a class="header__nav-icon" href="#"></a>
+    </div>
+
+    <nav class="header__nav header__nav--hide">
       <ul class="site-nav">
-        <li class="site-nav__item"><a href="index.html">Главная</a></li>
-        <li class="site-nav__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="site-nav__item"><a href="form.html">Подбор программы</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+        <li class="site-nav__item"><a class="site-nav__link  site-nav__link--active" href="catalog.html">Каталог продукции</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
-  </header>
 
+  </header>
+<!--
   <main class="content">
     <h1 class="content__h1">Каталог продукции</h1>
 
@@ -47,7 +52,6 @@
         <button class="btn" type="button">Заказать</button>
       </li>
 
-      <!-- Здесь будут еще товары -->
 
       <li class="product__more">
         <span class="product__title">Показать еще 100500 товаров</span>
@@ -69,7 +73,7 @@
         </table>
         <button class="btn" type="button">Заказать</button>
       </li>
-      <!-- Здесь будут еще товары -->
+
     </ul>
 
     <article class="bonus">
@@ -79,7 +83,6 @@
 
 
   </main>
-
 
   <footer class="footer">
 
@@ -106,7 +109,9 @@
     </div>
 
   </footer>
+   -->
 
+  <script src="js/script.js"></script>
 </body>
 
 </html>
