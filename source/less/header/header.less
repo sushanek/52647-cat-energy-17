@@ -78,8 +78,6 @@
   display: flex;
   flex-direction: column;
 
-
-
   &__item {
     height: 65px;
     border-bottom: 1px solid @colorLine;
@@ -88,7 +86,7 @@
 
   &__link {
     font-size: 20px;
-    color: @colorTextMain;
+    color: @color-text-main;
     text-decoration: none;
     text-transform: uppercase;
     display: flex;
@@ -121,7 +119,6 @@
       background-color: transparent;
       padding: 0;
       height: 0;
-
     }
 
     &__logo {
@@ -147,7 +144,6 @@
     align-items: center;
     justify-content: space-between;
 
-
     &__item {
       height: auto;
       border: none;
@@ -159,31 +155,24 @@
       padding: 14px 0 12px 0;
       position: relative;
 
-
-      &--active:before {
+      &--active::before {
         content: "";
         display: block;
-        background-color: @colorAccent;
+        background-color: @color-accent;
         width: 100%;
         height: 2px;
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
       }
     }
-
   }
 }
-
 
 @media (min-width: @desktop-width) {
   .header {
     padding: 60px 0;
     width: 1220px;
     margin: 0 auto;
-
-
-    &__container {
-    }
 
     &__logo {
       background-image: url("../../img/logo-desktop.svg");
@@ -205,7 +194,7 @@
       font-size: 20px;
       color: white;
 
-      &--active:before {
+      &--active::before {
         bottom: 1px;
         background-color: white;
       }
