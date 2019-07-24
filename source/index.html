@@ -30,17 +30,24 @@
 
   </header>
 
-<!--   <main class="content">
+  <main class="content">
     <h1 class="visually-hidden">Cat-Energy - Функциональное питание для котов</h1>
 
     <section class="headliner">
-      <h2 class="headliner__title">Функциональное питание для котов</h2>
+      <h2 class="headliner__title">Функциональное<br>питание для котов</h2>
       <span class="headliner__sub-title">Занялся собой? Займись котом!</span>
-      <img class="headliner__image" src="http://placehold.it/280x270" width="280" height="270"
-        alt="Фотография упоковки продукта Cat Energy Pro: Курица">
-      <button class="btn" type="button">Подобрать программу</button>
-    </section>
 
+      <picture class="headliner__img">
+        <source media="(min-width: 320px)" srcset="img/index-can-mobile@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png">
+        <img src="img/index-can-mobile@1x.png" alt="Фотография упоковки продукта Cat Energy Pro: Курица" style="width: auto;">
+      </picture>
+
+      <button class="btn" type="button">Подобрать программу</button>
+
+    </section>
+<!--
     <section class="program program--weight-loss">
       <img class="program__icon" src="http://placehold.it/50x50" width="50" height="50">
       <h3 class="program__title">Похудение</h3>
