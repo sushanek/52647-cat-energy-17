@@ -10,13 +10,13 @@
   color: white;
   padding-top: 28px;
   height: 305px;
+  box-sizing: border-box;
 }
 
 .headliner__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: white;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -27,4 +27,77 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .headliner {
+    background-color: transparent;
+    background-image: none;
+    color: @color-text-main;
+    align-items: flex-start;
+    width: @tablet-width;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 118px;
+  }
+
+  .headliner__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 45px;
+  }
+
+  .headliner__sub-title {
+    font-size: 20px;
+    margin-bottom: 47px;
+  }
+
+  .headliner__sub-img {
+    position: absolute;
+    top: 233px;
+    left: 30px;
+    width: 709px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .headliner {
+    padding: 60px 0;
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 54px;
+    padding-left: 81px;
+  }
+
+  .headliner::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    width: 720px;
+    height: 696px;
+    top: -169px;
+    left: 619px;
+    z-index: -1;
+
+    background-color: @color-accent;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headliner__title {
+    margin-bottom: 40px;
+  }
+
+  .headliner__sub-title {
+    margin-bottom: 50px;
+  }
+
+  .headliner__sub-img {
+    width: 552px;
+    top: -26px;
+    left: 459px;
+  }
 }
