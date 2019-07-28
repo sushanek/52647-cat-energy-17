@@ -2,15 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @color-accent;
-  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   color: white;
-  padding-top: 28px;
-  height: 305px;
+  min-height: 355px;
   box-sizing: border-box;
+  position: relative;
+  padding-top: 28px;
+}
+
+.headliner::before {
+  content: url("../img/index-background-mobile@1x.jpg");
+  background-color: @color-accent;
+  width: 320px;
+  height: 305px;
+  position: absolute;
+  z-index: 0;
+  top: 0;
 }
 
 .headliner__title {
@@ -21,31 +30,46 @@
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
+  z-index: 3;
 }
 
 .headliner__sub-title {
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 35px;
+  z-index: 3;
 }
+
+.headliner__sub-img {
+  z-index: 2;
+  width: 95%;
+  margin-top: 25px;
+  margin-right: 22px;
+}
+
+.headliner .btn {
+  min-width: 280px;
+  margin-bottom: 21px;
+}
+
 
 @media (min-width: @tablet-width) {
   .headliner {
-    background-color: transparent;
-    background-image: none;
     color: @color-text-main;
     align-items: flex-start;
-    width: @tablet-width;
-    margin: 0 auto;
-    position: relative;
+    margin-top: 6px;
     padding-left: 118px;
+    min-height: 838px;
+  }
+
+  .headliner::before {
+    display: none;
   }
 
   .headliner__title {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
 
   .headliner__sub-title {
@@ -55,19 +79,23 @@
 
   .headliner__sub-img {
     position: absolute;
-    top: 233px;
+    top: 205px;
     left: 30px;
     width: 709px;
+  }
+
+  .headliner .btn {
+    min-width: auto;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .headliner {
-    padding: 60px 0;
-    width: 1220px;
     margin: 0 auto;
-    padding-top: 54px;
-    padding-left: 81px;
+    width: @desktop-width;
+    padding: 53px 189px;
+    min-height: 527px;
   }
 
   .headliner::before {
@@ -78,7 +106,7 @@
     width: 720px;
     height: 696px;
     top: -169px;
-    left: 619px;
+    left: 50%;
     z-index: -1;
 
     background-color: @color-accent;
@@ -97,7 +125,7 @@
 
   .headliner__sub-img {
     width: 552px;
-    top: -26px;
-    left: 459px;
+    top: -53px;
+    left: 560px;
   }
 }
