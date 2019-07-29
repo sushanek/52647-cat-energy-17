@@ -4,6 +4,7 @@
 @import "controls\controls.less";
 @import "header\header.less";
 @import "headliner\headliner.less";
+@import "program\program.less";
 
 body {
   font-family: "oswald", "Arial", "Helvetica", sans-serif;
@@ -22,4 +23,21 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.content {
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .content {
+    width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content {
+    width: @desktop-width;
+  }
 }
