@@ -1,5 +1,4 @@
 .btn {
-  width: 280px;
   min-height: 40px;
   color: white;
   font-size: 16px;
@@ -8,4 +7,13 @@
   padding: 10px 30px;
   border: 0;
   box-sizing: border-box;
+  z-index: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    font-size: 20px;
+    min-height: 52px;
+    padding: 15px 28px;
+  }
 }
