@@ -1,44 +1,10 @@
 @import "normalize.less";
 @import "variables.less";
 @import "fonts.less";
+@import "global.less";
 @import "controls\controls.less";
 @import "header\header.less";
 @import "headliner\headliner.less";
 @import "program\program.less";
 @import "advantage\advantage.less";
-
-body {
-  font-family: "oswald", "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  min-width: 320px;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.content {
-  width: @mobile-width;
-  margin: 0 auto;
-}
-
-@media (min-width: @tablet-width) {
-  .content {
-    width: @tablet-width;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .content {
-    width: @desktop-width;
-  }
-}
+@import "example\example.less";

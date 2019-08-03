@@ -18,7 +18,7 @@
   width: 320px;
   height: 305px;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 0;
 }
 
@@ -30,27 +30,18 @@
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
-  z-index: 3;
 }
 
 .headliner__sub-title {
   text-transform: uppercase;
   text-align: center;
-  z-index: 3;
-}
-
-.headliner__sub-img {
-  z-index: 2;
-  width: 95%;
-  margin-top: 25px;
-  margin-right: 22px;
+  margin-bottom: 28px;
 }
 
 .headliner .btn {
   min-width: 280px;
   margin-bottom: 21px;
 }
-
 
 @media (min-width: @tablet-width) {
   .headliner {
@@ -74,12 +65,12 @@
 
   .headliner__sub-title {
     font-size: 20px;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
   }
 
   .headliner__sub-img {
     position: absolute;
-    top: 205px;
+    top: 229px;
     left: 30px;
     width: 709px;
   }
@@ -93,8 +84,8 @@
 @media (min-width: @desktop-width) {
   .headliner {
     margin: 0 auto;
-    width: @desktop-width;
-    padding: 53px 189px;
+    width: @desktop-width - 80px;
+    padding: 53px 80px;
     min-height: 527px;
   }
 
@@ -125,7 +116,7 @@
 
   .headliner__sub-img {
     width: 552px;
-    top: -53px;
-    left: 560px;
+    top: -27px;
+    left: 450px;
   }
 }
