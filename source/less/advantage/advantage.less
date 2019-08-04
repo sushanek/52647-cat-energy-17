@@ -103,19 +103,22 @@
   }
 
   .how-it-works__item::after {
+    content: "";
+    position: absolute;
     font-size: 281px;
     line-height: 200px;
     font-family: "oswald", "Arial", "Helvetica", sans-serif;
     align-self: center;
     color: @color-program-back;
+    top: 0;
     left: 36%;
-    position: absolute;
     letter-spacing: -33px;
     z-index: -1;
   }
 
   .how-it-works__item:nth-child(1)::after {
     content: "1";
+    position: absolute;
   }
 
   .how-it-works__item:nth-child(2)::after {
