@@ -5,33 +5,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet " href="css/style.css">
-
+  <link rel="icon" href="img/logo-mobile.svg" sizes="any" type="image/svg+xml">
+  <link rel="icon" href="img/fav/catenergy16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="img/fav/catenergy32.png" sizes="32x32" type="image/png">
   <title>КэтЭнерджи: Главная</title>
-
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="header">
-
       <div class="header__container">
-        <a class="header__logo" href="#"></a>
-        <a class="header__logo-text" href="#"></a>
-        <a class="header__nav-icon" href="#"></a>
+        <a class="header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg"
+              alt="Логотип Cat Energy" width="39" height="39">
+          </picture>
+        </a>
       </div>
-
-      <nav class="header__nav header__nav--hide">
-        <ul class="site-nav">
+      <nav class="site-nav no-js">
+        <button class="site-nav__toggle" type="button">Открыть меню</button>
+        <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог продукции</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
-
   </header>
 
   <main class="content">
     <h1 class="visually-hidden">Cat-Energy - Функциональное питание для котов</h1>
-
     <section class="headliner">
       <h2 class="headliner__title">Функциональное<br>питание для котов</h2>
       <span class="headliner__sub-title">Занялся собой? Займись котом!</span>
@@ -42,9 +49,7 @@
           srcset="img/index-can-mobile@2x.png 2x"
           alt="Фотография упоковки продукта Cat Energy Pro: Курица">
       </picture>
-
       <button class="btn" type="button">Подобрать программу</button>
-
     </section>
 
     <section class="programs">
@@ -62,7 +67,6 @@
         <a href="#" class="link-arrow">Каталог PRO</a>
         </div>
     </section>
-
 
     <section class="advantage">
       <h2 class="advantage__title title">Как это работает</h2>
@@ -117,16 +121,21 @@
         </div>
       </div>
     </section>
+    <section class="contact">
+      <div class="contact__wrapper">
+        <h2 class="contact__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
+        <address class="contact__address text">ул. Большая <br>Конюшенная, д. 19/8<br><span class="contact__city">Санкт-Петербург</span></address>
+      </div>
+      <div class="contact__map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad26543d3b4bcee3801a058c0292873d953d179ccd59e465327bee82cf8f28663&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </section>
   </main>
+
   <!--
   <footer class="footer">
 
-    <section class="contact">
-      <h2 class="contact__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contact_address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-      <img class="contact__map" src="http://placehold.it/320x400" width="320" height="400"
-        alt="Как добраться до офиса Cat Energy">
-    </section>
+
 
     <a href="#">
       <img class="footer__logo" src="http://placehold.it/128x24" width="128" height="24" alt="Логотип Cat Energy">
@@ -146,8 +155,5 @@
   </footer>
  -->
 
-
-<script src="js/script.js"></script>
 </body>
-
 </html>
