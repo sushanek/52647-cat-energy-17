@@ -11,9 +11,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: @mobile-width;
+  margin: 0 auto;
   min-height: 114px;
   padding: 0 20px;
   align-self: stretch;
+  box-sizing: border-box;
 }
 
 .contact__title {
@@ -36,6 +39,7 @@
 
 @media (min-width: @tablet-width) {
   .contact__wrapper {
+    width: @tablet-width - 60px;
     min-height: 201px;
     padding: 0 71px;
   }
@@ -59,7 +63,7 @@
     background-color: white;
     width: 570px;
     height: 201px;
-    left: 110px;
+    left: 10%;
     top: calc(50% - 100px);
     box-sizing: border-box;
     z-index: 1;
