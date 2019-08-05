@@ -12,6 +12,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sourcemaps": "2.6.x",
+    "gulp-webp": "^4.0.1",
     "stylelint": "10.1.x",
     "stylelint-config-htmlacademy": "0.1.x"
   },
@@ -39,6 +40,7 @@
     "node": "8.16"
   },
   "dependencies": {
+    "gulp-imagemin": "^6.0.0",
     "normalize.less": "^1.0.0"
   }
 }

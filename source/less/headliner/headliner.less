@@ -1,28 +1,33 @@
 .headliner {
+  width: 100%;
+  min-height: 355px;
+  position: relative;
+}
+
+.headliner__inner {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
   color: white;
-  min-height: 355px;
   box-sizing: border-box;
-  position: relative;
   padding-top: 28px;
 }
 
 .headliner::before {
-  content: url("/img/index-background-mobile@1x.jpg");
-  background-color: @color-accent;
-  width: 320px;
+  content: "";
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: @color-cat-bg;
+  width: 100%;
   height: 305px;
   position: absolute;
   z-index: -1;
   top: 0;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("/img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
@@ -49,10 +54,15 @@
 
 @media (min-width: @tablet-width) {
   .headliner {
+    width: 100%;
+  }
+
+  .headliner__inner {
+    width: @tablet-width - 60px;
+    margin: 0 auto;
     color: @color-text-main;
     align-items: flex-start;
-    margin-top: 6px;
-    padding-left: 118px;
+    padding: 36px 87px;
     min-height: 838px;
   }
 
@@ -74,9 +84,10 @@
 
   .headliner__sub-img {
     position: absolute;
-    top: 229px;
-    left: 30px;
+    top: 237px;
+    left: 0;
     width: 709px;
+    z-index: -1;
   }
 
   .headliner .btn {
@@ -86,7 +97,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .headliner {
+  .headliner__inner {
     margin: 0 auto;
     width: @desktop-width - 80px;
     padding: 53px 80px;
@@ -98,19 +109,19 @@
     display: block;
     position: absolute;
 
-    width: 68%;
+    width: 50%;
     height: 696px;
     top: -169px;
     left: 50%;
     z-index: -1;
 
     background-color: @color-accent;
-    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("/img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 
