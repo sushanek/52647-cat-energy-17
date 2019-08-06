@@ -2,6 +2,10 @@
   display: none;
 }
 
+.no-js .site-nav__list {
+  display: flex;
+}
+
 .site-nav__toggle {
   font-size: 0;
   border: 0;
@@ -29,12 +33,13 @@
 }
 
 .site-nav__list {
+  display: none;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+
 }
 
 .site-nav__item {
@@ -73,6 +78,7 @@
   }
 
   .site-nav__list {
+    display: flex;
     flex-direction: row;
     min-width: 440px;
     box-sizing: border-box;
