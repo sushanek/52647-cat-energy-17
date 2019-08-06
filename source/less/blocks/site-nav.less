@@ -1,56 +1,19 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  min-width: 230px;
+.no-js .site-nav__toggle {
+  display: none;
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
-  box-sizing: border-box;
-  padding: 12px 19px;
-  border-bottom: 1px solid @color-line;
-  background-color: white;
-}
-
-.header__logo {
-  background-image: url("../img/logo-mobile.svg");
-  background-repeat: no-repeat;
-  width: 39px;
-  height: 39px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.header__logo-text {
-  background-image: url("../img/logo-mobile--text.svg");
-  background-repeat: no-repeat;
-  width: 114px;
-  height: 39px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
-.header__nav-icon {
+.site-nav__toggle {
+  font-size: 0;
+  border: 0;
+  background-color: transparent;
   background-image: url("../img/icon-mobile-menu.svg");
   background-repeat: no-repeat;
   width: 39px;
   height: 39px;
   opacity: 1;
+  position: absolute;
+  top: 13px;
+  right: 19px;
 
   &:hover {
     opacity: 0.6;
@@ -65,12 +28,7 @@
   }
 }
 
-.header__nav--hide {
-  display: none;
-}
-
-
-.site-nav {
+.site-nav__list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -105,41 +63,16 @@
   }
 }
 
-
 @media (min-width: @tablet-width) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 30px;
-    box-sizing: border-box;
-  }
-
-  .header__container {
-    border: 0;
-    background-color: transparent;
-    padding: 0;
-    height: 0;
-  }
-
-  .header__logo {
-    background-image: url("../img/logo-tablet.svg");
-    width: 174px;
-    height: 59px;
-  }
-
-  .header__logo-text,
-  .header__nav-icon {
+  .site-nav__toggle {
     display: none;
+
+    &--hide {
+      display: block;
+    }
   }
 
-  .header__nav--hide {
-    display: block;
-  }
-
-
-  .site-nav {
+  .site-nav__list {
     flex-direction: row;
     min-width: 440px;
     box-sizing: border-box;
@@ -171,20 +104,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .header {
-    width: @desktop-width;
-    margin: 0 auto;
-    padding: 60px 110px;
-  }
-
-  .header__logo {
-    background-image: url("../img/logo-desktop.svg");
-    width: 202px;
-    height: 60px;
-  }
-
-
-  .site-nav {
+  .site-nav__list {
     min-width: 480px;
   }
 

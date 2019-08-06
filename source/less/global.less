@@ -1,0 +1,46 @@
+
+body {
+  font-family: "oswald", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  min-width: @mobile-width;
+  color: @color-text-main;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.4;
+  color: @color-text-main;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: @color-text-second;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .title {
+    font-size: 60px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
