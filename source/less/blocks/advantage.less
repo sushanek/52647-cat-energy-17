@@ -1,6 +1,8 @@
 .advantage {
   margin: 0 auto;
-  width: @mobile-width - 40px;
+  width: @mobile-width;
+  padding: 0 20px 23px;
+  box-sizing: border-box;
 }
 
 .advantage__title {
@@ -31,6 +33,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: @color-accent;
+  background-size: 50px 50px;
   margin-right: 20px;
 }
 
@@ -152,8 +155,9 @@
 
 @media (min-width: @desktop-width) {
   .advantage {
-    width: @desktop-width - 80px;
+    width: @desktop-width;
     margin: 58px auto 0;
+    padding: 0 40px;
   }
 
   .advantage__title {
