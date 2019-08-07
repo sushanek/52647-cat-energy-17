@@ -6,7 +6,7 @@ ymaps.ready(function () {
     controls: []
   }),
 
-  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+  var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/map-pin.png',
     iconImageSize: [124, 106],
