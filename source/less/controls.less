@@ -51,6 +51,147 @@
   }
 }
 
+.control__radio-field,
+.control__checkbox-field {
+  display: none;
+}
+
+.control__radio-field:checked + .control__radio::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: 9px;
+  left: 9px;
+  box-sizing: border-box;
+  background-color: @color-accent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.control__radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+  position: relative;
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid @color-line-tretiy;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.control__input {
+  display: flex;
+  text-transform: uppercase;
+  color: @color-text-menu;
+  align-items: center;
+  white-space: nowrap;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+.control__input-field {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  border: solid 1px @color-line-tretiy;
+  color: @color-text-second;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: white;
+  margin-left: 15px;
+  padding: 5px 15px;
+
+
+  &:hover {
+    border: solid 1px @color-line-tretiy;
+  }
+
+  &:active {
+    border: solid 2px @color-text-second;
+  }
+
+  &:invalid {
+    border: solid 2px @color-error;
+  }
+}
+
+
+.control__textarea {
+  width: 280px;
+  height: 150px;
+  border: 1px solid @color-line;
+  line-height: 1.13;
+  text-transform: uppercase;
+  padding: 13px;
+  box-sizing: border-box;
+  margin: 0 20px;
+  resize: none;
+
+  &:hover {
+    border-color: #cecece;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid @color-text-second;
+    outline: none;
+  }
+}
+
+.control__checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 13px;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: solid 1px #cdcdcd;
+    margin-right: 16px;
+    box-sizing: border-box;
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.control__checkbox-field:checked + .control__checkbox::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 10px;
+  border-left: 2px solid @color-accent;
+  border-bottom: 2px solid @color-accent;
+  transform: rotate(-45deg);
+  top: 6px;
+  left: 6px;
+}
+
 @media (min-width: @tablet-width) {
   .btn {
     font-size: 20px;

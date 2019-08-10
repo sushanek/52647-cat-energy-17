@@ -6,11 +6,11 @@ ymaps.ready(function () {
     controls: []
   }),
 
-  var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
     iconLayout: 'default#image',
     iconImageHref: 'img/map-pin.png',
-    iconImageSize: [124, 106],
-    iconImageOffset: [-65, -100]
+    iconImageSize: [62, 53],
+    iconImageOffset: [-31, -60]
   });
 
   myMap.geoObjects.add(myPlacemark);
