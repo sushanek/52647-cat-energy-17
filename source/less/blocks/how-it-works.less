@@ -1,16 +1,16 @@
-.advantage {
+.how-it-works {
   margin: 0 auto;
   width: @mobile-width;
   padding: 0 20px 23px;
   box-sizing: border-box;
 }
 
-.advantage__title {
+.how-it-works__title {
   margin: 0;
   padding: 0 0 34px;
 }
 
-.how-it-works {
+.how-it-works__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -18,8 +18,18 @@
 
 .how-it-works__item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.how-it-works__description {
+  margin: 0;
+  padding: 2px 0 0 0;
+
+  & > br {
+    display: none;
+  }
 }
 
 .how-it-works__item > br {
@@ -70,30 +80,31 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantage {
-    margin: 0 auto;
+  .how-it-works {
+    margin: 34px auto 0;
     width: @tablet-width;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .advantage::after {
+  .how-it-works::after {
     content: "";
     display: block;
     left: 0;
     height: 1px;
     width: 100%;
+    min-width: 768px;
     background-color: @color-line;
     margin-top: -31px;
   }
 
-  .advantage__title {
-    margin: 3px 0 26px;
+  .how-it-works__title {
+    padding: 0 0 60px;
     width: @tablet-width - 60px;
   }
 
-  .how-it-works {
+  .how-it-works__list {
     width: @tablet-width - 60px;
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +120,15 @@
     padding: 0;
     margin-bottom: 87px;
     position: relative;
+  }
+
+  .how-it-works__description {
+    padding: 0;
+    width: 250px;
+
+    & > br {
+      display: inline-block;
+    }
   }
 
   .how-it-works__item > br {
@@ -154,22 +174,22 @@
 }
 
 @media (min-width: @desktop-width) {
-  .advantage {
+  .how-it-works {
     width: @desktop-width;
-    margin: 58px auto 0;
+    margin: 61px auto 0;
     padding: 0 40px;
   }
 
-  .advantage__title {
+  .how-it-works__title {
     width: 100%;
   }
 
-  .how-it-works {
-    width: 100%;
-  }
-
-  .advantage::after {
+  .how-it-works::after {
     display: none;
+  }
+
+  .how-it-works__list {
+    width: 100%;
   }
 
   .how-it-works__item {

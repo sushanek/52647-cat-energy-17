@@ -1,0 +1,112 @@
+
+.progress-bar {
+  align-self: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin: 31px 0 36px;
+}
+
+.progress-bar__text {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.progress-bar__indicator {
+  width: 84px;
+  height: 14px;
+  background-color: white;
+  margin: 0 19px;
+  border-radius: 14px;
+  box-sizing: border-box;
+  border: 1px solid @color-line-tretiy;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 6px;
+    background-color: @color-accent;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .progress-bar {
+    justify-content: space-between;
+    margin-top: 21px;
+  }
+
+  .progress-bar__text {
+    font-size: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .progress-bar__indicator {
+    width: 428px;
+    height: 6px;
+    background-color: @color-indicator-bg;
+    border-radius: 3px;
+    border: none;
+    margin: 0 22px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      background-color: white;
+      border: 1px solid @color-line-tretiy;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      border-radius: 50%;
+      top: -14px;
+      left: calc(50% - 17px);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: @color-accent;
+      border: none;
+      box-sizing: border-box;
+      border-radius: 50%;
+      top: -1px;
+      left: calc(50% - 4px);
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .progress-bar {
+    z-index: 2;
+    margin: 0 39px;
+    align-self: flex-end;
+  }
+
+  .progress-bar__text {
+    padding-bottom: 5px;
+  }
+
+  .progress-bar__indicator {
+    margin: 0 26px 0 20px;
+
+    &::before {
+      left: calc(50% - 13px);
+    }
+
+    &::after {
+      left: 50%;
+    }
+  }
+}

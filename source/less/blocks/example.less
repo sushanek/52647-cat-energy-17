@@ -4,6 +4,8 @@
   background-color: @color-program-back;
   margin: 0 auto;
   width: @mobile-width;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .example__title {
@@ -65,59 +67,10 @@
   font-weight: 400;
 }
 
-.cat-slider {
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cat-slider__right {
-  display: none;
-}
-
-.progress-bar {
-  align-self: center;
-  font-size: 16px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  margin: 31px 0 36px;
-}
-
-.progress-bar__text {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-
-.progress-bar__indicator {
-  width: 84px;
-  height: 14px;
-  background-color: white;
-  margin: 0 19px;
-  border-radius: 14px;
-  box-sizing: border-box;
-  border: 1px solid @color-line-tretiy;
-  display: flex;
-  align-items: center;
-  padding: 0 4px;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 50%;
-    height: 6px;
-    background-color: @color-accent;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .example {
     background-color: transparent;
-    margin-top: 10px;
+    margin-top: 8px;
     width: @tablet-width;
   }
 
@@ -166,105 +119,6 @@
     align-self: center;
     line-height: 30px;
   }
-
-  .cat-slider {
-    position: relative;
-    flex-direction: column;
-    min-height: 633px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #f2f2f2;
-      width: 382px;
-      height: 461px;
-      z-index: -1;
-      left: -34px;
-      top: 172px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: #eaeaea;
-      width: 386px;
-      height: 461px;
-      z-index: -1;
-      left: 348px;
-      top: 172px;
-    }
-  }
-
-  .cat-slider__holder {
-    width: 700px;
-    height: 517px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cat-slider__left {
-    display: flex;
-    width: 50%;
-    overflow: hidden;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  .cat-slider__right {
-    display: flex;
-    width: 50%;
-    overflow: hidden;
-    flex-direction: row-reverse;
-    right: 0;
-  }
-
-  .progress-bar {
-    justify-content: space-between;
-    margin-top: 21px;
-  }
-
-  .progress-bar__text {
-    font-size: 20px;
-    padding-bottom: 3px;
-    border-bottom: 1px dotted #bebebe;
-  }
-
-  .progress-bar__indicator {
-    width: 428px;
-    height: 6px;
-    background-color: @color-indicator-bg;
-    border-radius: 3px;
-    border: none;
-    margin: 0 22px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 34px;
-      height: 34px;
-      background-color: white;
-      border: 1px solid @color-line-tretiy;
-      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-      box-sizing: border-box;
-      border-radius: 50%;
-      top: -14px;
-      left: calc(50% - 17px);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background-color: @color-accent;
-      border: none;
-      box-sizing: border-box;
-      border-radius: 50%;
-      top: -1px;
-      left: calc(50% - 4px);
-    }
-  }
 }
 
 @media (min-width: @desktop-width) {
@@ -281,16 +135,26 @@
     margin-left: 40px;
   }
 
+  .example__content {
+    margin-top: 62px;
+    background-color: @color-program-back;
+    min-height: 461px;
+    box-sizing: border-box;
+    width: 1300px;
+    padding: 72px 40px;
+  }
+
   .example__text {
-    margin-top: 134px;
-    margin-left: 40px;
-    padding-right: 35px;
+    margin: 0;
+    width: 432px;
+    padding: 0 40px 0 0;
+    margin-bottom: 68px;
   }
 
   .number-list {
-    margin: 67px 40px 47px;
     justify-content: space-between;
     width: 366px;
+    margin: 0;
   }
 
   .number {
@@ -310,39 +174,5 @@
 
   .example__sub-title > b {
     margin-right: 39px;
-  }
-
-  .cat-slider {
-    align-self: flex-start;
-
-    &::before {
-      width: 927px;
-      top: 190px;
-      left: -554px;
-    }
-
-    &::after {
-      width: 373px;
-      top: 190px;
-      left: 373px;
-    }
-  }
-
-  .cat-slider__holder {
-    width: 746px;
-    height: 555px;
-  }
-
-  .cat-slider__right {
-    width: 46%;
-  }
-
-  .cat-slider__left {
-    width: 46%;
-  }
-
-  .progress-bar {
-    margin-top: 0;
-    margin-left: 6px;
   }
 }

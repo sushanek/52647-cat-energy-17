@@ -13,9 +13,10 @@
   align-items: center;
   width: @mobile-width;
   margin: 0 auto;
-  padding: 28px 20px;
+  padding: 6px 24px 0 19px;
   align-self: stretch;
   box-sizing: border-box;
+  min-height: 114px;
 }
 
 .contact__title {
@@ -30,18 +31,19 @@
 .contact__address {
   font-style: normal;
   line-height: 1.43;
+  text-align: left;
 }
 
 .contact__map {
   width: 100%;
-  min-height: 400px;
+  min-height: 363px;
 }
 
 @media (min-width: @tablet-width) {
   .contact__wrapper {
     width: @tablet-width - 60px;
     min-height: 201px;
-    padding: 0 71px;
+    padding: 5px 42px 0 41px;
   }
 
   .contact__title {
@@ -51,9 +53,20 @@
   .contact__address {
     display: flex;
     flex-direction: column;
-    height: 82px;
+    height: 80px;
     justify-content: space-between;
     align-items: baseline;
+    text-align: right;
+    line-height: 1.3;
+  }
+
+  .contact__city {
+    width: 100%;
+    text-align: right;
+  }
+
+  .contact__map {
+    min-height: 400px;
   }
 }
 
@@ -62,10 +75,20 @@
     position: absolute;
     background-color: white;
     width: 570px;
-    height: 201px;
+    min-height: auto;
+    height: 200px;
     left: 40px;
-    top: calc(50% - 100px);
+    top: calc(48% - 100px);
     box-sizing: border-box;
     z-index: 1;
+    padding: 7px 90px 0 75px;
+  }
+
+  .contact__address {
+    text-align: left;
+  }
+
+  .contact__city {
+    text-align: left;
   }
 }
