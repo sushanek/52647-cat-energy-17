@@ -47,14 +47,16 @@
     <ul class="product__list">
       <li class="product">
         <div class="product__inner">
-          <picture>
-            <source media="(min-width: 1300px)"
-              srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-            <img class="product__img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x"
-              alt="Фото продукта">
-          </picture>
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/chicken-small-mobile@1x.jpg"
+                srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
 
           <table class="product__description">
             <caption class="product__title">Cat Energy PRO 500 г</caption>
@@ -77,14 +79,16 @@
 
       <li class="product">
         <div class="product__inner">
-          <picture>
-            <source media="(min-width: 1300px)"
-              srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-            <img class="product__img" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x"
-              alt="Фото продукта">
-          </picture>
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="product__img product__img--big" src="img/chicken-big-mobile@1x.jpg"
+                srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
 
           <table class="product__description">
             <caption class="product__title">Cat Energy PRO 1000 г</caption>
@@ -99,6 +103,164 @@
             <tr>
               <td class="product__feature">Цена:</td>
               <td class="product__value">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <button class="btn" type="button">Заказать</button>
+      </li>
+
+      <li class="product">
+        <div class="product__inner">
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
+                width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
+
+          <table class="product__description">
+            <caption class="product__title">Cat Energy PRO 500 г</caption>
+            <tr>
+              <td class="product__feature">Объем:</td>
+              <td class="product__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Вкус:</td>
+              <td class="product__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Цена:</td>
+              <td class="product__value">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <button class="btn" type="button">Заказать</button>
+      </li>
+
+      <li class="product">
+        <div class="product__inner">
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img class="product__img product__img--big" src="img/fish-big-mobile@1x.jpg"
+                srcset="img/fish-big-mobile@2x.jpg 2x" alt="Фото продукта">
+            </picture>
+          </div>
+
+          <table class="product__description">
+            <caption class="product__title">Cat Energy PRO 1000 г</caption>
+            <tr>
+              <td class="product__feature">Объем:</td>
+              <td class="product__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Вкус:</td>
+              <td class="product__value">Рыба</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Цена:</td>
+              <td class="product__value">1000 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <button class="btn" type="button">Заказать</button>
+      </li>
+
+      <li class="product">
+        <div class="product__inner">
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/buckwheat-small-mobile@1x.jpg"
+                srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
+
+          <table class="product__description">
+            <caption class="product__title">Cat Energy Slim 500 г</caption>
+            <tr>
+              <td class="product__feature">Объем:</td>
+              <td class="product__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Вкус:</td>
+              <td class="product__value">Гречка</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Цена:</td>
+              <td class="product__value">400 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <button class="btn" type="button">Заказать</button>
+      </li>
+
+      <li class="product">
+        <div class="product__inner">
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="product__img product__img--big" src="img/buckwheat-big-mobile@1x.jpg"
+                srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
+
+          <table class="product__description">
+            <caption class="product__title">Cat Energy Slim 1000 г</caption>
+            <tr>
+              <td class="product__feature">Объем:</td>
+              <td class="product__value">1000 г</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Вкус:</td>
+              <td class="product__value">Гречка</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Цена:</td>
+              <td class="product__value">700 Р.</td>
+            </tr>
+          </table>
+        </div>
+        <button class="btn" type="button">Заказать</button>
+      </li>
+
+      <li class="product">
+        <div class="product__inner">
+          <div class="product__img-holder">
+            <picture>
+              <source media="(min-width: 1300px)"
+                srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
+                width="140" height="144" alt="Фото продукта">
+            </picture>
+          </div>
+          <table class="product__description">
+            <caption class="product__title">Cat Energy Slim 500 г</caption>
+            <tr>
+              <td class="product__feature">Объем:</td>
+              <td class="product__value">500 г</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Вкус:</td>
+              <td class="product__value">Рис</td>
+            </tr>
+            <tr>
+              <td class="product__feature">Цена:</td>
+              <td class="product__value">500 Р.</td>
             </tr>
           </table>
         </div>
