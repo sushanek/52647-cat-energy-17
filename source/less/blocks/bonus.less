@@ -34,3 +34,34 @@
   margin: 0 auto;
   margin-top: 62px;
 }
+
+@media (min-width: @tablet-width) {
+  .bonus {
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 708px;
+    height: 200px;
+    padding: 66px 90px;
+    box-sizing: border-box;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    margin-top: 71px;
+    margin-bottom: 76px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  .bonus__icon {
+    margin: 0;
+  }
+
+  .bonus__text {
+    margin: 0;
+    text-align: left;
+    margin-top: 6px;
+    margin-right: 24px;
+  }
+}
