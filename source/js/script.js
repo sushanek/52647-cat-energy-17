@@ -1,17 +1,19 @@
 //  Открытие меню на мобильники
+var navIcon = document.querySelector(".site-nav__toggle");
+var mobileMenu = document.querySelector(".site-nav__list");
 
-navIcon = document.querySelector(".header__nav-icon");
-mobileMenu = document.querySelector(".header__nav");
+if (document.querySelector(".no-js")) {
+  document.querySelector(".no-js").classList.remove("no-js");
+}
 
 navIcon.addEventListener("click", function (evt) {
   evt.preventDefault();
 
-  if(mobileMenu.classList.contains("header__nav--hide")) {
-    mobileMenu.classList.remove("header__nav--hide");
-    navIcon.classList.add("header__nav-icon--close");
+  if(mobileMenu.classList.contains("site-nav__list--show")) {
+    mobileMenu.classList.remove("site-nav__list--show");
+    navIcon.classList.remove("site-nav__toggle--close");
   } else {
-    mobileMenu.classList.add("header__nav--hide");
-    navIcon.classList.remove("header__nav-icon--close");
-
+    mobileMenu.classList.add("site-nav__list--show");
+    navIcon.classList.add("site-nav__toggle--close");
   }
 });
