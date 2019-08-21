@@ -1,0 +1,76 @@
+.subtitle {
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: none;
+  color: @color-text-main;
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  width: @mobile-width;
+  font-weight: 400;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  span {
+    padding: 0 22px 2px 19px;
+    background-color: white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: @color-accent;
+    height: 3px;
+    width: 100%;
+    top: 16px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .subtitle {
+    font-size: 36px;
+    padding-left: 0;
+    margin-bottom: 79px;
+
+    &::before {
+      content: "";
+      background-color: @color-accent;
+      height: 3px;
+      width: 32px;
+      margin-right: 39px;
+      display: flex;
+      margin-top: 22px;
+      margin-left: 0x;
+    }
+
+    &::after {
+      width: 50%;
+      margin-top: 22px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .subtitle {
+    margin: 13px auto 80px;
+    max-width: 1440px;
+
+    span {
+      padding-left: 40px;
+      padding-right: 36px;
+      margin-left: 70px;
+    }
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
