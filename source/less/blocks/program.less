@@ -1,6 +1,10 @@
+.programs {
+  margin: 0 20px;
+  flex-wrap: wrap;
+}
+
 .program {
-  width: 280px;
-  min-height: 266px;
+  min-width: 280px;
   background-color: @color-program-back;
   margin: 0 auto;
   margin-bottom: 21px;
@@ -8,6 +12,10 @@
   padding-bottom: 10px;
   box-sizing: border-box;
   position: relative;
+
+  .link-arrow {
+    margin-bottom: 7px;
+  }
 
   &::before {
     content: "";
@@ -40,7 +48,7 @@
     width: 67px;
     height: 28px;
     left: 13px;
-    top: 33px;
+    top: 35px;
   }
 }
 
@@ -57,8 +65,8 @@
 }
 
 .program__text {
-  margin-top: 30px;
-  margin-bottom: 17px;
+  margin-top: 31px;
+  margin-bottom: 16px;
 
   &::after {
     content: "";
@@ -71,16 +79,23 @@
 }
 
 @media (min-width: @tablet-width) {
+  .programs {
+    margin: 0 30px;
+  }
   .program {
-    min-width: 708px;
-    min-height: 372px;
     margin-bottom: 30px;
-    padding: 0 53px;
+    padding: 68px 283px 36px 53px;
+
+
+    .link-arrow {
+      margin-bottom: 20px;
+    }
 
     &::before {
       width: 200px;
       height: 200px;
-      left: 446px;
+      left: auto;
+      right: 62px;
       top: 92px;
     }
   }
@@ -89,7 +104,8 @@
     &::after {
       width: 141px;
       height: 194px;
-      left: 476px;
+      left: auto;
+      right: 91px;
       top: 80px;
     }
   }
@@ -98,21 +114,20 @@
     &::after {
       width: 268px;
       height: 113px;
-      left: 412px;
-      top: 134px;
+      left: auto;
+      right: 28px;
+      top: 136px;
     }
   }
 
   .program__title {
     margin: 0;
-    padding-top: 68px;
     font-size: 36px;
   }
 
   .program__text {
     margin-top: 16px;
     margin-bottom: 51px;
-    width: 375px;
 
     &::after {
       content: none;
@@ -120,30 +135,33 @@
   }
 
   .program--weight-gain .program__text {
-    width: 340px;
+    margin-right: 28px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs {
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
-    width: @desktop-width - 80px;
-    margin-top: 80px;
+    padding: 54px 20px 0;
+    max-width: @max-width;
+    min-width: @desktop-width;
+    box-sizing: border-box;
+    justify-content: space-between;
+
   }
 
   .program {
-    min-width: 570px;
-    min-height: 372px;
-    margin: 0;
-    padding-bottom: 30px;
+    width: 45.2%;
+    margin: 20px;
+    padding: 66px 30px 37px 52px;
 
     &::before {
       content: "";
       width: 100px;
       height: 100px;
       left: 52px;
+      right: auto;
       top: 47px;
     }
   }
@@ -153,6 +171,7 @@
       width: 71px;
       height: 97px;
       left: 66px;
+      right: auto;
       top: 40px;
     }
   }
@@ -162,18 +181,17 @@
       width: 134px;
       height: 57px;
       left: 34px;
+      right: auto;
       top: 69px;
     }
   }
 
   .program__title {
-    padding-top: 67px;
-    padding-left: 161px;
+    margin-left: 162px;
   }
 
   .program > .program__text {
-    margin-top: 65px;
-    margin-bottom: 26px;
+    margin: 65px 0 26px;
     width: auto;
   }
 }

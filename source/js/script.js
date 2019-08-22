@@ -6,6 +6,10 @@ if (document.querySelector(".no-js")) {
   document.querySelector(".no-js").classList.remove("no-js");
 }
 
+if (document.querySelector(".no-js-map")) {
+  document.querySelector(".no-js-map").classList.remove("no-js-map");
+}
+
 navIcon.addEventListener("click", function (evt) {
   evt.preventDefault();
 
