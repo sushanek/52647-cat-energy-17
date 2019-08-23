@@ -1,7 +1,7 @@
 .btn {
   height: 40px;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   background-color: @color-accent;
   text-transform: uppercase;
   border: 0;
@@ -10,6 +10,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+
 
   &:hover {
     background-color: @color-accent-hover;
@@ -65,12 +67,12 @@
   }
 }
 
-.control__radio-field,
-.control__checkbox-field {
+.radio-field,
+.checkbox-field {
   display: none;
 }
 
-.control__radio-field:checked + .control__radio::after {
+.radio-field:checked + .radio::after {
   content: "";
   display: block;
   width: 12px;
@@ -83,7 +85,7 @@
   position: absolute;
 }
 
-.control__radio {
+.radio {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
@@ -109,7 +111,7 @@
   }
 }
 
-.control__input {
+.input {
   display: flex;
   text-transform: uppercase;
   color: @color-text-menu;
@@ -125,7 +127,7 @@
   }
 }
 
-.control__input-field {
+.input-field {
   display: flex;
   height: 45px;
   width: 100%;
@@ -160,7 +162,7 @@
   }
 }
 
-.control__textarea {
+.textarea {
   width: 280px;
   height: 150px;
   border: 1px solid @color-line;
@@ -182,7 +184,7 @@
   }
 }
 
-.control__checkbox {
+.checkbox {
   display: flex;
   align-items: center;
   position: relative;
@@ -207,7 +209,7 @@
   }
 }
 
-.control__checkbox-field:checked + .control__checkbox::after {
+.checkbox-field:checked + .checkbox::after {
   content: "";
   position: absolute;
   display: block;
@@ -234,7 +236,7 @@
     }
   }
 
-  .control__input {
+  .input {
     margin-bottom: 20px;
 
     svg {
@@ -243,20 +245,20 @@
     }
   }
 
-  .control__input-field {
+  .input-field {
     height: 52px;
     margin-left: 15px;
     padding: 5px 15px;
   }
 
-  .control__radio-field:checked + .control__radio::after {
+  .radio-field:checked + .radio::after {
     width: 18px;
     height: 18px;
     top: 11px;
     left: 11px;
   }
 
-  .control__radio {
+  .radio {
     margin-bottom: 13px;
 
     &::before {
@@ -266,14 +268,14 @@
     }
   }
 
-  .control__textarea {
+  .textarea {
     width: 631px;
     height: 174px;
     padding: 14px 17px;
     margin: 0 67px 0 71px;
   }
 
-  .control__checkbox {
+  .checkbox {
     margin-bottom: 33px;
 
     &::before {
@@ -283,7 +285,7 @@
     }
   }
 
-  .control__checkbox-field:checked + .control__checkbox::after {
+  .checkbox-field:checked + .checkbox::after {
     width: 17px;
     height: 10px;
     top: 11px;
@@ -292,7 +294,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .control__textarea {
+  .textarea {
     box-sizing: border-box;
     width: 1220px;
     height: 174px;
@@ -300,7 +302,7 @@
     margin: 0 40px;
   }
 
-  .control__input {
+  .input {
     svg {
       top: 17px;
       right: 18px;
