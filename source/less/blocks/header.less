@@ -10,7 +10,7 @@
   align-items: center;
   height: 65px;
   box-sizing: border-box;
-  padding: 12px 19px;
+  padding: 10px 17px 13px;
   border-bottom: 1px solid @color-line;
   background-color: white;
 }
@@ -44,7 +44,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 30px 28px;
+    padding: 30px 30px 28px;
     box-sizing: border-box;
   }
 
@@ -69,9 +69,10 @@
 
 @media (min-width: @desktop-width) {
   .header {
-    width: @desktop-width - 80px;
+    min-width: @desktop-width;
+    max-width: @max-width;
     margin: 0 auto;
-    padding: 59px 0 60px;
+    padding: 59px 40px 60px;
   }
 
   .header__logo {

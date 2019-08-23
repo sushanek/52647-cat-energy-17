@@ -12,11 +12,18 @@
   <script>
     document.createElement("picture");
   </script>
+<<<<<<< HEAD
   <script src="js/picturefill.min.js" type="text/javascript" async></script>
   <script defer src="js/svgxuse.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=bdc233a0-1132-4c77-ae70-805f7264c637&lang=ru_RU"
     type="text/javascript"></script>
   <script src="js/map.js" type="text/javascript"></script>
+=======
+  <script src="js/picturefill.min.js" async></script>
+  <script src="js/svgxuse.min.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=bdc233a0-1132-4c77-ae70-805f7264c637&lang=ru_RU"></script>
+  <script src="js/map.js"></script>
+>>>>>>> module8-task2
 </head>
 
 <body>
@@ -49,38 +56,35 @@
       <form class="form__content" method="get" action="https://echo.htmlacademy.ru">
         <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--about">
-            <label class="control__input" for="id_cat-name">
+            <label class="input" for="id_cat-name">
               <span>Имя:*</span>
-              <input class="control__input-field" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="id_cat-name"
+              <input class="input-field" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="id_cat-name"
                 placeholder="Барсик">
             </label>
 
-            <label class="control__input" for="id_cat-weight">
+            <label class="input" for="id_cat-weight">
               <span>Вес (кг):*</span>
-              <input class="control__input-field" type="number" name="current-weight" id="id_cat-weight"
-                placeholder="7">
+              <input class="input-field" type="number" name="current-weight" id="id_cat-weight" placeholder="7">
             </label>
 
-            <label class="control__input" for="id_cat-age">
+            <label class="input" for="id_cat-age">
               <span>Возраст (лет):</span>
-              <input class="control__input-field" type="number" name="age" id="id_cat-age" placeholder="7">
+              <input class="input-field" type="number" name="age" id="id_cat-age" placeholder="7">
             </label>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--target">
             <ul class="form__list">
               <li class="form__item">
-                <input class="control__radio-field" id="id_weight-loss" type="radio" name="weight" value="weight-loss"
-                  checked>
-                <label class="control__radio" for="id_weight-loss">Похудение</label>
+                <input class="radio-field" id="id_weight-loss" type="radio" name="weight" value="weight-loss" checked>
+                <label class="radio" for="id_weight-loss">Похудение</label>
               </li>
               <li class="form__item">
-                <input class="control__radio-field" id="id_weight-gain" type="radio" name="weight" value="weight-gain">
-                <label class="control__radio" for="id_weight-gain">Набор массы</label>
+                <input class="radio-field" id="id_weight-gain" type="radio" name="weight" value="weight-gain">
+                <label class="radio" for="id_weight-gain">Набор массы</label>
               </li>
               <li class="form__item">
-                <input class="control__radio-field" id="id_weight-advice" type="radio" name="weight"
-                  value="weight-advice">
-                <label class="control__radio" for="id_weight-advice">Не знаю (Нужен ваш совет)</label>
+                <input class="radio-field" id="id_weight-advice" type="radio" name="weight" value="weight-advice">
+                <label class="radio" for="id_weight-advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
@@ -89,26 +93,22 @@
         <fieldset class="form__fieldset form__fieldset--master">
           <legend class="form__subtitle"><span>Контактные данные (владельца кота)</span></legend>
           <div class="form__inner">
-            <label class="control__input" for="id_master-email">
+            <label class="input" for="id_master-email">
               <span>E-mail:*</span>
-              <input class="control__input-field" type="email" name="master-email" id="id_master-email"
+              <input class="input-field" type="email" name="master-email" id="id_master-email"
                 placeholder="kuklachev@gmail.com">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.5 14.5H1.5V9H0V16H18V9H16.5176L16.5 14.5ZM0 3V5.5L9 12.5L18 5.5V3H0ZM16.5176 4.5L9 10.5L1.5 4.5H16.5176Z"
-                  fill="currentColor" />
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
 
             </label>
 
-            <label class="control__input" for="id_master-phone">
+            <label class="input" for="id_master-phone">
               <span>Телефон:*</span>
-              <input class="control__input-field" type="tel" name="master-phone" id="id_master-phone"
+              <input class="input-field" type="tel" name="master-phone" id="id_master-phone"
                 placeholder="8 (960) 900-60-90">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M8.1054 13.2054V19.4054C8.1054 19.7054 7.8054 20.0054 7.5054 19.9054H3.1054H2.9054C1.2054 19.9054 -0.0945964 18.5054 0.00540359 16.8054V3.1054V2.9054C0.105404 1.2054 1.5054 -0.0945964 3.1054 0.00540359H7.5054C7.8054 0.00540359 8.1054 0.305404 8.2054 0.605404V6.9054C8.2054 7.2054 7.9054 7.5054 7.6054 7.5054H3.2054C3.2054 6.9054 3.7054 6.3054 4.4054 6.3054H6.8054V1.3054H3.1054H2.9054C2.0054 1.3054 1.2054 2.1054 1.2054 3.1054V16.9054V17.1054C1.3054 18.1054 2.1054 18.9054 3.1054 18.8054H6.8054V13.8054H4.3054C3.7054 13.8054 3.1054 13.3054 3.1054 12.6054H4.4054H7.5054C7.8054 12.6054 8.1054 12.9054 8.1054 13.2054ZM9.40527 9.40543H17.9053L15.8053 7.40543L16.7053 6.50543L19.8053 9.60543C20.0053 9.90543 20.0053 10.3054 19.8053 10.5054L16.7053 13.6054L15.8053 12.7054L17.9053 10.6054H9.40527V9.40543Z"
-                  fill="currentColor" />
+              <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
             </label>
           </div>
@@ -116,36 +116,34 @@
 
         <fieldset class="form__fieldset form__fieldset--comment">
           <legend class="form__subtitle"><span>Комментарий</span></legend>
-          <textarea class="control__textarea" name="comments"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--add">
           <legend class="form__subtitle"><span>Дополнительно</span></legend>
           <ul class="form__list form__list--check">
             <li class="form__item">
-              <input class="control__checkbox-field" type="checkbox" id="id_extra-sweetener" name="extra-sweetener"
-                checked>
-              <label class="control__checkbox" for="id_extra-sweetener">Сахарозаменитель</label>
+              <input class="checkbox-field" type="checkbox" id="id_extra-sweetener" name="extra-sweetener" checked>
+              <label class="checkbox" for="id_extra-sweetener">Сахарозаменитель</label>
             </li>
             <li class="form__item">
-              <input class="control__checkbox-field" type="checkbox" id="id_extra-water" name="extra-water">
-              <label class="control__checkbox" for="id_extra-water">Питьевая вода</label>
+              <input class="checkbox-field" type="checkbox" id="id_extra-water" name="extra-water">
+              <label class="checkbox" for="id_extra-water">Питьевая вода</label>
             </li>
             <li class="form__item">
-              <input class="control__checkbox-field" type="checkbox" id="id_extra-milk" name="extra-milk">
-              <label class="control__checkbox" for="id_extra-milk">Молоко</label>
+              <input class="checkbox-field" type="checkbox" id="id_extra-milk" name="extra-milk">
+              <label class="checkbox" for="id_extra-milk">Молоко</label>
             </li>
             <li class="form__item">
-              <input class="control__checkbox-field" type="checkbox" id="id_extra-vitamin" name="extra-vitamin">
-              <label class="control__checkbox" for="id_extra-vitamin">Витамины</label>
+              <input class="checkbox-field" type="checkbox" id="id_extra-vitamin" name="extra-vitamin">
+              <label class="checkbox" for="id_extra-vitamin">Витамины</label>
             </li>
           </ul>
         </fieldset>
 
         <div class="form__actions">
           <button class="btn" type="submit">Отправить заявку</button>
-          <p class="text">* — Обязательные поля</span>
+          <p class="text">* — Обязательные поля</p>
         </div>
 
       </form>
@@ -157,7 +155,19 @@
         <address class="contact__address text">ул. Большая<br>Конюшенная, д. 19/8<br><span
             class="contact__city">Санкт-Петербург</span></address>
       </div>
-      <div class="contact__map" id="map" width="363"></div>
+      <div class="contact__map no-js-map" id="map">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)"
+            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="contact__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
+          height="400" alt="Расположение офиса Cat Energy на карте">
+        </picture>
+      </div>
     </section>
   </main>
 
@@ -171,21 +181,33 @@
 
       <div class="footer__wrapper">
         <ul class="footer__social">
+<<<<<<< HEAD
           <li aria-label="Страница Вконтакте">
+=======
+          <li>
+>>>>>>> module8-task2
             <a class="footer__social-item" href="https://vk.com/htmlacademy" title="Страница Вконтакте">
               <svg width="24" height="19">
                 <use xlink:href="img/sprite.svg#icon__vk"></use>
               </svg>
             </a>
           </li>
+<<<<<<< HEAD
           <li aria-label="Страница Инстаграм">
+=======
+          <li>
+>>>>>>> module8-task2
             <a class="footer__social-item" href="https://www.instagram.com/htmlacademy/" title="Страница Инстаграм">
               <svg width="18" height="19">
                 <use xlink:href="img/sprite.svg#icon__insta"></use>
               </svg>
             </a>
           </li>
+<<<<<<< HEAD
           <li aria-label="Страница Фейсбук">
+=======
+          <li>
+>>>>>>> module8-task2
             <a class="footer__social-item" href="https://www.facebook.com/htmlacademy" title="Страница Фейсбук">
               <svg width="12" height="19">
                 <use xlink:href="img/sprite.svg#icon__fb"></use>
@@ -203,8 +225,12 @@
       </a>
     </div>
   </footer>
+<<<<<<< HEAD
 
   <script src="js/script.js" type="text/javascript"></script>
+=======
+  <script src="js/script.js"></script>
+>>>>>>> module8-task2
 </body>
 
 </html>
