@@ -1,7 +1,7 @@
 .how-it-works {
   margin: 0 auto;
-  width: @mobile-width;
-  padding: 0 20px 23px;
+  min-width: @mobile-width;
+  padding: 0 6% 6%;
   box-sizing: border-box;
 }
 
@@ -14,6 +14,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .how-it-works__item {
@@ -21,11 +24,13 @@
   align-items: flex-start;
   margin-bottom: 20px;
   box-sizing: border-box;
+  max-width: @mobile-width - 40px;
 }
 
 .how-it-works__description {
   margin: 0;
   padding: 2px 0 0 0;
+
 
   & > br {
     display: none;

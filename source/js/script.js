@@ -5,13 +5,10 @@ var mobileMenu = document.querySelector(".site-nav__list");
 if (document.querySelector(".no-js")) {
   document.querySelector(".no-js").classList.remove("no-js");
 }
-<<<<<<< HEAD
-=======
 
 if (document.querySelector(".no-js-map")) {
   document.querySelector(".no-js-map").classList.remove("no-js-map");
 }
->>>>>>> module8-task2
 
 navIcon.addEventListener("click", function (evt) {
   evt.preventDefault();
