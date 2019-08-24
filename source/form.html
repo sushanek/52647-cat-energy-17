@@ -2,20 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/logo-mobile.svg" sizes="any" type="image/svg+xml">
-  <link rel="icon" href="img/fav/catenergy16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="img/fav/catenergy32.png" sizes="32x32" type="image/png">
-  <title>КэтЭнерджи: Заказ</title>
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/svgxuse.min.js" defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=bdc233a0-1132-4c77-ae70-805f7264c637&lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <include src="source/contact.template"></include>
 </head>
 
 <body>
@@ -50,8 +37,7 @@
           <fieldset class="form__fieldset form__fieldset--about">
             <label class="input" for="id_cat-name">
               <span>Имя:*</span>
-              <input class="input-field" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="id_cat-name"
-                placeholder="Барсик">
+              <input class="input-field" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="id_cat-name" placeholder="Барсик">
             </label>
 
             <label class="input" for="id_cat-weight">
@@ -67,7 +53,7 @@
           <fieldset class="form__fieldset form__fieldset--target">
             <ul class="form__list">
               <li class="form__item">
-                <input class="radio-field" id="id_weight-loss" type="radio" name="weight" value="weight-loss" checked>
+                <input class="radio-field" id="id_weight-loss" type="radio" name="weight" value="weight-loss" checked="">
                 <label class="radio" for="id_weight-loss">Похудение</label>
               </li>
               <li class="form__item">
@@ -87,8 +73,7 @@
           <div class="form__inner">
             <label class="input" for="id_master-email">
               <span>E-mail:*</span>
-              <input class="input-field" type="email" name="master-email" id="id_master-email"
-                placeholder="kuklachev@gmail.com">
+              <input class="input-field" type="email" name="master-email" id="id_master-email" placeholder="kuklachev@gmail.com">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
@@ -97,8 +82,7 @@
 
             <label class="input" for="id_master-phone">
               <span>Телефон:*</span>
-              <input class="input-field" type="tel" name="master-phone" id="id_master-phone"
-                placeholder="8 (960) 900-60-90">
+              <input class="input-field" type="tel" name="master-phone" id="id_master-phone" placeholder="8 (960) 900-60-90">
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
@@ -115,7 +99,7 @@
           <legend class="form__subtitle"><span>Дополнительно</span></legend>
           <ul class="form__list form__list--check">
             <li class="form__item">
-              <input class="checkbox-field" type="checkbox" id="id_extra-sweetener" name="extra-sweetener" checked>
+              <input class="checkbox-field" type="checkbox" id="id_extra-sweetener" name="extra-sweetener" checked="">
               <label class="checkbox" for="id_extra-sweetener">Сахарозаменитель</label>
             </li>
             <li class="form__item">
@@ -140,71 +124,9 @@
 
       </form>
     </section>
-
-    <section class="contact">
-      <div class="contact__wrapper">
-        <h2 class="contact__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
-        <address class="contact__address text">ул. Большая<br>Конюшенная, д. 19/8<br><span
-            class="contact__city">Санкт-Петербург</span></address>
-      </div>
-      <div class="contact__map no-js-map" id="map">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="contact__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
-          height="400" alt="Расположение офиса Cat Energy на карте">
-        </picture>
-      </div>
-    </section>
+    <include src="source/contact.template"></include>
   </main>
-
-  <footer class="footer">
-    <div class="footer__inner">
-      <a class="footer__logo" href="index.html">
-        <svg width="130" height="26">
-          <use xlink:href="img/sprite.svg#logo__footer"></use>
-        </svg>
-      </a>
-
-      <div class="footer__wrapper">
-        <ul class="footer__social">
-          <li>
-            <a class="footer__social-item" href="https://vk.com/htmlacademy" title="Страница Вконтакте">
-              <svg width="24" height="19">
-                <use xlink:href="img/sprite.svg#icon__vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer__social-item" href="https://www.instagram.com/htmlacademy/" title="Страница Инстаграм">
-              <svg width="18" height="19">
-                <use xlink:href="img/sprite.svg#icon__insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="footer__social-item" href="https://www.facebook.com/htmlacademy" title="Страница Фейсбук">
-              <svg width="12" height="19">
-                <use xlink:href="img/sprite.svg#icon__fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <a class="footer__copy" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="footer__copy-text text">HTML Academy</span>
-        <svg role="img" class="footer__copy-logo" width="40" height="50">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon__html-academy"></use>
-        </svg>
-      </a>
-    </div>
-  </footer>
+  <include src="source/contact.template"></include>
   <script src="js/script.js"></script>
 </body>
 

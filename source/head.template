@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet " href="css/style.min.css">
+<link rel="icon" href="img/logo-mobile.svg" sizes="any" type="image/svg+xml">
+<link rel="icon" href="img/fav/catenergy16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="img/fav/catenergy32.png" sizes="32x32" type="image/png">
+<title>КэтЭнерджи: Главная</title>
+<script>
+  document.createElement("picture");
+</script>
+<script src="js/picturefill.min.js" async></script>
+<script src="js/svgxuse.min.js" defer></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=bdc233a0-1132-4c77-ae70-805f7264c637&lang=ru_RU"></script>
+<script src="js/map.js"></script>

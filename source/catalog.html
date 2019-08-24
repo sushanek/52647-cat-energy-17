@@ -2,20 +2,7 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/logo-mobile.svg" sizes="any" type="image/svg+xml">
-  <link rel="icon" href="img/fav/catenergy16.png" sizes="16x16" type="image/png">
-  <link rel="icon" href="img/fav/catenergy32.png" sizes="32x32" type="image/png">
-  <title>КэтЭнерджи: Каталог</title>
-  <script>
-    document.createElement("picture");
-  </script>
-  <script src="js/picturefill.min.js" async></script>
-  <script src="js/svgxuse.min.js" defer></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=bdc233a0-1132-4c77-ae70-805f7264c637&lang=ru_RU"></script>
-  <script src="js/map.js"></script>
+  <include src="source/contact.template"></include>
 </head>
 
 <body>
@@ -48,18 +35,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img class="product__img" src="img/chicken-small-mobile@1x.jpg"
-                srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
 
@@ -86,17 +67,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-              <img class="product__img product__img--big" src="img/chicken-big-mobile@1x.jpg"
-                srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="product__img product__img--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
 
@@ -123,17 +99,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img class="product__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x"
-                width="140" height="144" alt="Фото продукта">
+              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
 
@@ -160,16 +131,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
-              <img class="product__img product__img--big" src="img/fish-big-mobile@1x.jpg"
-                srcset="img/fish-big-mobile@2x.jpg 2x" alt="Фото продукта">
+              <img class="product__img product__img--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Фото продукта">
             </picture>
           </div>
 
@@ -197,18 +164,12 @@
           <div class="product__img-holder">
             <picture>
 
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-              <img class="product__img" src="img/buckwheat-small-mobile@1x.jpg"
-                srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
 
@@ -235,18 +196,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-              <img class="product__img product__img--big" src="img/buckwheat-big-mobile@1x.jpg"
-                srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="product__img product__img--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
 
@@ -273,17 +228,12 @@
         <div class="product__inner">
           <div class="product__img-holder">
             <picture>
-              <source type="image/webp" media="(min-width: 1300px)"
-                srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
-              <source media="(min-width: 1300px)"
-                srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-              <img class="product__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x"
-                width="140" height="144" alt="Фото продукта">
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img class="product__img" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" width="140" height="144" alt="Фото продукта">
             </picture>
           </div>
           <table class="product__description">
@@ -366,81 +316,15 @@
       </ul>
 
       <div class="bonus">
-        <svg class="bonus__icon" width="56" height="60" viewBox="0 0 56 60" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M52.8616 12.1705H45.7864C46.2918 11.4686 46.595 10.7667 46.8983 9.96449C47.5047 7.95906 47.3025 5.85335 46.2918 4.04846C45.2811 2.24358 43.6639 0.940046 41.6424 0.338417C39.6209 -0.263213 37.4984 -0.0626697 35.6791 0.940046C32.0404 2.94548 29.4125 7.05661 27.9975 9.96449C26.5824 7.05661 23.9545 2.84521 20.3158 0.940046C16.475 -1.06539 11.7246 0.338416 9.70309 4.04846C8.28805 6.7558 8.4902 9.86422 10.2085 12.1705H3.13329C1.41503 12.1705 0 13.5743 0 15.2789V24.7044C0 26.409 1.41503 27.8128 3.13329 27.8128H4.04295V53.9837C4.04295 57.2927 6.77195 60 10.1074 60H45.9886C49.324 60 52.053 57.2927 52.053 53.9837V27.8128H52.8616C54.5799 27.8128 55.9949 26.409 55.9949 24.7044V15.2789C56.096 13.5743 54.6809 12.1705 52.8616 12.1705ZM36.8919 2.94548C38.2059 2.24358 39.6209 2.1433 41.036 2.54439C42.3499 2.94548 43.4617 3.84792 44.1693 5.15145C44.8768 6.45498 44.9779 7.85878 44.5736 9.26259C44.1693 10.4658 43.4617 11.4686 42.3499 12.1705H29.7157C30.8275 9.5634 33.3544 4.95091 36.8919 2.94548ZM11.8256 5.15145C13.3417 2.54439 16.5761 1.54168 19.204 2.94548C22.7416 4.85064 25.2685 9.5634 26.3803 12.0702H13.645C11.3203 10.6664 10.5117 7.55797 11.8256 5.15145ZM26.7846 27.8128V41.55H6.46872V27.8128H26.7846ZM6.46872 53.9837V43.9566H26.8856V57.6938H10.1074C8.08591 57.6938 6.46872 55.9891 6.46872 53.9837ZM45.9886 57.6938H29.2103V43.9566H49.6272V53.9837C49.6272 55.9891 48.0101 57.6938 45.9886 57.6938ZM49.6272 41.55H29.2103V27.8128H49.6272V41.55V41.55ZM53.6702 24.7044C53.6702 25.1055 53.367 25.4063 52.9627 25.4063H50.9412H27.9975H5.25584H3.23436C2.83007 25.4063 2.52685 25.1055 2.52685 24.7044V15.2789C2.52685 14.8778 2.83007 14.577 3.23436 14.577H52.9627C53.367 14.577 53.6702 14.8778 53.6702 15.2789V24.7044V24.7044Z"
-            fill="currentColor" />
+        <svg class="bonus__icon" width="56" height="60" viewBox="0 0 56 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M52.8616 12.1705H45.7864C46.2918 11.4686 46.595 10.7667 46.8983 9.96449C47.5047 7.95906 47.3025 5.85335 46.2918 4.04846C45.2811 2.24358 43.6639 0.940046 41.6424 0.338417C39.6209 -0.263213 37.4984 -0.0626697 35.6791 0.940046C32.0404 2.94548 29.4125 7.05661 27.9975 9.96449C26.5824 7.05661 23.9545 2.84521 20.3158 0.940046C16.475 -1.06539 11.7246 0.338416 9.70309 4.04846C8.28805 6.7558 8.4902 9.86422 10.2085 12.1705H3.13329C1.41503 12.1705 0 13.5743 0 15.2789V24.7044C0 26.409 1.41503 27.8128 3.13329 27.8128H4.04295V53.9837C4.04295 57.2927 6.77195 60 10.1074 60H45.9886C49.324 60 52.053 57.2927 52.053 53.9837V27.8128H52.8616C54.5799 27.8128 55.9949 26.409 55.9949 24.7044V15.2789C56.096 13.5743 54.6809 12.1705 52.8616 12.1705ZM36.8919 2.94548C38.2059 2.24358 39.6209 2.1433 41.036 2.54439C42.3499 2.94548 43.4617 3.84792 44.1693 5.15145C44.8768 6.45498 44.9779 7.85878 44.5736 9.26259C44.1693 10.4658 43.4617 11.4686 42.3499 12.1705H29.7157C30.8275 9.5634 33.3544 4.95091 36.8919 2.94548ZM11.8256 5.15145C13.3417 2.54439 16.5761 1.54168 19.204 2.94548C22.7416 4.85064 25.2685 9.5634 26.3803 12.0702H13.645C11.3203 10.6664 10.5117 7.55797 11.8256 5.15145ZM26.7846 27.8128V41.55H6.46872V27.8128H26.7846ZM6.46872 53.9837V43.9566H26.8856V57.6938H10.1074C8.08591 57.6938 6.46872 55.9891 6.46872 53.9837ZM45.9886 57.6938H29.2103V43.9566H49.6272V53.9837C49.6272 55.9891 48.0101 57.6938 45.9886 57.6938ZM49.6272 41.55H29.2103V27.8128H49.6272V41.55V41.55ZM53.6702 24.7044C53.6702 25.1055 53.367 25.4063 52.9627 25.4063H50.9412H27.9975H5.25584H3.23436C2.83007 25.4063 2.52685 25.1055 2.52685 24.7044V15.2789C2.52685 14.8778 2.83007 14.577 3.23436 14.577H52.9627C53.367 14.577 53.6702 14.8778 53.6702 15.2789V24.7044V24.7044Z" fill="currentColor"></path>
         </svg>
         <p class="bonus__text">Закажите все<br> и получите чехол для кота в подарок!</p>
       </div>
     </div>
-
-    <section class="contact">
-      <div class="contact__wrapper">
-        <h2 class="contact__title">Приглашаем <br>к сотрудничеству <br>дилеров!</h2>
-        <address class="contact__address text">ул. Большая<br>Конюшенная, д. 19/8<br><span
-            class="contact__city">Санкт-Петербург</span></address>
-      </div>
-      <div class="contact__map no-js-map" id="map">
-        <picture>
-          <source type="image/webp" media="(min-width: 1300px)"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-          <img class="contact__map-img" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" width="320"
-          height="400" alt="Расположение офиса Cat Energy на карте">
-        </picture>
-      </div>
-    </section>
+    <include src="source/contact.template"></include>
   </main>
-
-  <footer class="footer">
-      <div class="footer__inner">
-        <a class="footer__logo" href="index.html">
-          <svg width="130" height="26">
-            <use xlink:href="img/sprite.svg#logo__footer"></use>
-          </svg>
-        </a>
-
-        <div class="footer__wrapper">
-          <ul class="footer__social">
-            <li>
-              <a class="footer__social-item" href="https://vk.com/htmlacademy" title="Страница Вконтакте">
-                <svg width="24" height="19">
-                  <use xlink:href="img/sprite.svg#icon__vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__social-item" href="https://www.instagram.com/htmlacademy/" title="Страница Инстаграм">
-                <svg width="18" height="19">
-                  <use xlink:href="img/sprite.svg#icon__insta"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a class="footer__social-item" href="https://www.facebook.com/htmlacademy" title="Страница Фейсбук">
-                <svg width="12" height="19">
-                  <use xlink:href="img/sprite.svg#icon__fb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <a class="footer__copy" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="footer__copy-text text">HTML Academy</span>
-          <svg role="img" class="footer__copy-logo" width="40" height="50">
-            <use xlink:href="img/sprite.svg#icon__html-academy"></use>
-          </svg>
-        </a>
-      </div>
-    </footer>
-  <script src="js/script.js"></script>
+  <include src="source/footer.template"></include>  <script src="js/script.js"></script>
 </body>
 
 </html>
