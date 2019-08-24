@@ -28,6 +28,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: cover;
   }
 }
 
@@ -51,20 +52,21 @@
   min-width: 280px;
   margin-bottom: 21px;
   font-size: 14px;
+  width: 88%;
 }
 
 @media (min-width: @tablet-width) {
   .headliner {
     width: 100%;
     margin-bottom: 7px;
+    padding: 8px 4% 0 15.3%;
+    box-sizing: border-box;
   }
 
   .headliner__inner {
-    width: @tablet-width - 60px;
-    margin: 0 auto;
+
     color: @color-text-main;
     align-items: flex-start;
-    padding: 36px 88px;
     min-height: 838px;
   }
 
@@ -87,14 +89,15 @@
 
   .headliner__sub-img {
     position: absolute;
-    top: 237px;
-    left: 0;
+    top: 229px;
+    right: 0%;
     width: 709px;
     z-index: -1;
   }
 
   .headliner .btn {
-    min-width: auto;
+    min-width: 245px;
+    width: 39%;
     margin-bottom: 0;
     padding: 0 27px;
     font-size: 20px;
