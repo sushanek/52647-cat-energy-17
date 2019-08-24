@@ -1,0 +1,42 @@
+  <footer class="footer">
+    <div class="footer__inner">
+      <a class="footer__logo" href="index.html">
+        <svg width="130" height="26">
+          <use xlink:href="img/sprite.svg#logo__footer"></use>
+        </svg>
+      </a>
+
+      <div class="footer__wrapper">
+        <ul class="footer__social">
+          <li>
+            <a class="footer__social-item" href="https://vk.com/htmlacademy" title="Страница Вконтакте">
+              <svg width="24" height="19">
+                <use xlink:href="img/sprite.svg#icon__vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-item" href="https://www.instagram.com/htmlacademy/" title="Страница Инстаграм">
+              <svg width="18" height="19">
+                <use xlink:href="img/sprite.svg#icon__insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="footer__social-item" href="https://www.facebook.com/htmlacademy" title="Страница Фейсбук">
+              <svg width="12" height="19">
+                <use xlink:href="img/sprite.svg#icon__fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a class="footer__copy" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__copy-text text">HTML Academy!</span>
+        <svg role="img" class="footer__copy-logo" width="40" height="50">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon__html-academy"></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
