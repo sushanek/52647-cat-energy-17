@@ -1,6 +1,6 @@
   <footer class="footer">
     <div class="footer__inner">
-      <a class="footer__logo" href="index.html">
+      <a class="footer__logo" href="index.html" title="На главную страницу">
         <svg width="130" height="26">
           <use xlink:href="img/sprite.svg#logo__footer"></use>
         </svg>
@@ -40,3 +40,4 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.min.js" async></script>

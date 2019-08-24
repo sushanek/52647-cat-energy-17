@@ -4,7 +4,12 @@ ymaps.ready(function () {
     center: [59.938631, 30.323055],
     zoom: 17,
     controls: []
-  }),
+  }, {
+    restrictMapArea: [
+      [59.838, 29.511],
+      [60.056, 30.829]
+    ]
+  });
 
   myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
     iconLayout: 'default#image',
