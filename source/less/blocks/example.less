@@ -80,8 +80,10 @@
 @media (min-width: @tablet-width) {
   .example {
     background-color: transparent;
-    margin-top: 8px;
-    width: @tablet-width;
+  }
+
+  .example__inner {
+    padding: 1px 0 0;
   }
 
   .example__title {
@@ -90,18 +92,20 @@
   }
 
   .example__text {
-    margin: 52px 44px 52px 30px;
+    padding: 26px 6% 15px 4%;
+    margin: 0;
   }
 
   .number-list {
-    margin: 37px 30px 85px;
+    margin: 37px 4% 50px;
     justify-content: flex-start;
   }
 
   .number {
-    width: 162px;
-    height: 72px;
-    margin-right: 42px;
+    width: 22.9%;
+    min-height: 72px;
+    margin-right: 6%;
+    margin-left: 0;
   }
 
   .number__main {
@@ -126,8 +130,18 @@
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-self: flex-start;
     line-height: 30px;
+    margin-top: 6px;
+
+    @media (min-width: @tablet-width + 20px) {
+      flex-direction: row;
+      margin-top: 19px;
+
+      b {
+        margin-left: 5px;
+      }
+    }
   }
 }
 
@@ -135,7 +149,8 @@
   .example {
     flex-direction: row;
     box-sizing: border-box;
-    width: @desktop-width;
+    min-width: @desktop-width;
+    max-width: @max-width;
     margin-top: -1px;
     min-height: 651px;
   }
@@ -170,6 +185,7 @@
   .number {
     margin: 0;
     margin-bottom: 40px;
+    width: 43.9%;
   }
 
   .number__sub {
@@ -180,6 +196,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 15px;
+    padding-left: 0;
   }
 
   .example__sub-title > b {

@@ -1,6 +1,7 @@
 .programs {
   margin: 0 6%;
   flex-wrap: wrap;
+  display: flex;
 }
 
 .program {
@@ -32,7 +33,7 @@
 
 .program--weight-loss {
   &::after {
-    content: url("../img/icon-cat-slim.svg");
+    content: url("../img/cat-slim.svg");
     position: absolute;
     width: 35px;
     height: 49px;
@@ -43,7 +44,7 @@
 
 .program--weight-gain {
   &::after {
-    content: url("../img/icon-cat-pro.svg");
+    content: url("../img/cat-pro.svg");
     position: absolute;
     width: 67px;
     height: 28px;
@@ -80,12 +81,12 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    margin: 0 30px;
+    margin: 0 4%;
   }
 
   .program {
     margin-bottom: 30px;
-    padding: 68px 283px 36px 53px;
+    padding: 68px 282px 36px 53px;
 
     .link-arrow {
       margin-bottom: 20px;
@@ -143,7 +144,7 @@
   .programs {
     display: flex;
     margin: 0 auto;
-    padding: 54px 20px 0;
+    padding: 7px 20px 0;
     max-width: @max-width;
     min-width: @desktop-width;
     box-sizing: border-box;
