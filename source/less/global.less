@@ -1,4 +1,3 @@
-
 body {
   font-family: "oswald", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -34,6 +33,37 @@ body {
   line-height: 18px;
 }
 
+.no-js-map {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+
+  .ymaps-2-1-74-map {
+    display: none;
+  }
+
+  .contact__map-img {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    background-image: url("../img/map-pin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 62px;
+    height: 53px;
+    z-index: 2;
+    top: 140px;
+    left: 129px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .title {
     font-size: 60px;
@@ -42,5 +72,19 @@ body {
   .text {
     font-size: 16px;
     line-height: 1.5;
+  }
+
+  .no-js-map::after {
+    width: 124px;
+    height: 106px;
+    top: 142px;
+    left: 333px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .no-js-map::after {
+    top: 148px;
+    left: 929px;
   }
 }
