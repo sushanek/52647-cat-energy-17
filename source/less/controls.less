@@ -1,5 +1,5 @@
 .btn {
-  height: 40px;
+  min-height: 40px;
   color: white;
   font-size: 16px;
   background-color: @color-accent;
@@ -11,6 +11,9 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
 
   &:hover {
@@ -143,6 +146,10 @@
     border: solid 1px @color-line-tretiy;
   }
 
+  &:valid:not(:placeholder-shown) {
+    border: solid 2px @color-accent;
+  }
+
   &:active,
   &:focus {
     outline: 0;
@@ -153,7 +160,7 @@
     }
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     border: solid 2px @color-error;
 
     & + svg {
@@ -172,6 +179,10 @@
   box-sizing: border-box;
   margin: 0 6%;
   resize: none;
+
+  &:valid:not(:placeholder-shown) {
+    border: solid 2px @color-accent;
+  }
 
   &:hover {
     border-color: #cecece;
@@ -225,7 +236,7 @@
 @media (min-width: @tablet-width) {
   .btn {
     font-size: 20px;
-    height: 52px;
+    min-height: 52px;
   }
 
   .link-arrow {

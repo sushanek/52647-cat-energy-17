@@ -60,7 +60,6 @@
 .product__description {
   margin: 0;
   padding: 0;
-  width: 100%;
   box-sizing: border-box;
   border: 1px;
   border-collapse: collapse;
@@ -230,7 +229,7 @@
 
     .btn {
       width: 249px;
-      height: 40px;
+      min-height: 40px;
       font-size: 16px;
       margin-bottom: 37px;
     }
@@ -266,6 +265,7 @@
     margin-bottom: 18px;
     font-weight: 400;
     letter-spacing: 0;
+    min-height: 42px;
   }
 
   .product__more {
@@ -296,7 +296,7 @@
     }
 
     .btn {
-      height: 40px;
+      min-height: 40px;
       font-size: 16px;
       margin-top: 84px;
       width: 250px;
@@ -397,15 +397,11 @@
   }
 
   .product__item {
-    width: 245px;
+    width: 19%;
     min-height: 500px;
-    margin: 0;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 65px;
+    margin: 0 3% 65px;
 
     &::after {
-      width: 245px;
       min-height: 429px;
       top: 57px;
       left: 0;
@@ -444,19 +440,19 @@
   }
 
   .product__title {
-    padding: 0 15px;
+    padding: 0 10%;
   }
 
   .product__more {
-    width: 245px;
+    width: 19%;
     min-width: auto;
     min-height: 432px;
     margin-top: 80px;
-    margin-left: 40px;
+    margin-left: 3%;
     padding: 0;
 
     .product__title {
-      padding: 0 40px;
+      padding: 0 15%;
       margin-top: 49px;
     }
 
@@ -465,7 +461,7 @@
     }
 
     .btn {
-      height: 40px;
+      min-height: 40px;
       font-size: 16px;
       margin-top: 84px;
       width: 169px;
@@ -517,6 +513,7 @@
     .product__description {
       margin: 0;
       margin-right: 20px;
+      align-items: center;
     }
 
     .product__feature {

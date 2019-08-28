@@ -38,12 +38,12 @@
           <fieldset class="form__fieldset form__fieldset--about">
             <label class="input" for="id_cat-name">
               <span>Имя:*</span>
-              <input class="input-field" type="text" pattern="[A-Za-zА-Яа-яЁё]" name="name" id="id_cat-name" placeholder="Барсик">
+              <input class="input-field" type="text" name="name" id="id_cat-name" placeholder="Барсик" required>
             </label>
 
             <label class="input" for="id_cat-weight">
               <span>Вес (кг):*</span>
-              <input class="input-field" type="number" name="current-weight" id="id_cat-weight" placeholder=" 7">
+              <input class="input-field" type="number" name="current-weight" id="id_cat-weight" placeholder=" 7" required>
             </label>
 
             <label class="input" for="id_cat-age">
@@ -74,7 +74,7 @@
           <div class="form__inner">
             <label class="input" for="id_master-email">
               <span>E-mail:*</span>
-              <input class="input-field" type="email" name="master-email" id="id_master-email" placeholder="kuklachev@gmail.com">
+              <input class="input-field" type="email" name="master-email" id="id_master-email" placeholder="kuklachev@gmail.com" required>
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-email"></use>
               </svg>
@@ -83,7 +83,7 @@
 
             <label class="input" for="id_master-phone">
               <span>Телефон:*</span>
-              <input class="input-field" type="tel" name="master-phone" id="id_master-phone" placeholder="8 (960) 900-60-90">
+              <input class="input-field" type="tel" name="master-phone" id="id_master-phone" placeholder="8 (960) 900-60-90" required>
               <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
