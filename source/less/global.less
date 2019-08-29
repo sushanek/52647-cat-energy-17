@@ -48,20 +48,6 @@ body {
   .contact__map-img {
     display: flex;
   }
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: flex;
-    background-image: url("../img/map-pin.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 62px;
-    height: 53px;
-    z-index: 2;
-    top: 140px;
-    left: 129px;
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -74,17 +60,18 @@ body {
     line-height: 1.5;
   }
 
-  .no-js-map::after {
-    width: 124px;
-    height: 106px;
-    top: 142px;
-    left: 333px;
+  .no-js-map {
+    .contact__map-img {
+      width: 767px;
+      height: 400px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .no-js-map::after {
-    top: 148px;
-    left: 929px;
+  .no-js-map {
+    .contact__map-img {
+      width: 1440px;
+    }
   }
 }
